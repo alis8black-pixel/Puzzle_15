@@ -1,0 +1,212 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MediaPlayer">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>22d6f304-b0f6-11d0-94ab-0080c74c7e95</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMLSS">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>c21e9ce5-b317-463b-a1b1-b5e36eed59d0</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPDXMLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>73f0dd5c-d071-46b6-a8bf-897c84eaac49</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLauncher">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>5cb42160-cd7c-4806-9367-1c4a65153f4a</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPNSSCI">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>453e9e02-8ba4-474c-bfa0-37727e44f6ae</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPNSSCDS">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>73c381a8-548c-49f8-8ad3-c845d12d3c22</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPRichPreviewLauncher">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>fa258721-cf24-45d7-a9cb-80047d7fec35</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <WrapperTool>aximp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0-windows\Resources\3F3I.gif" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\4QYc.gif" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\52O8.gif" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\6SSp.gif" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\6SSp1.gif" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 1 click копия.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 1 копия.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 1 копия1.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 1.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 2 click копия.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 2 копия.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 2 копия1.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 2.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 3.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 4 click.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\button 4.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Copilot_20251107_130206.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Copilot_20251107_1302061.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Copilot_20251107_1302062.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Copilot_20251107_1302063.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\panda roux.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\photo_2025-11-06_16-03-56 копия 2.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\photo_2025-11-06_16-03-56.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\photo_2025-11-08_18-46-45.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Аниме\Kozume Kenma _ Haikyuu.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Аниме\Reaper Riyou.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Аниме\Аниме_1.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Аниме\Аниме_2.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Аниме\Аниме_3.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Аниме\Аниме_4.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Аниме\загрузка %284%29.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Аниме\загрузка %285%29.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Животные\Животные 1.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Животные\Животные_1.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Животные\Животные_2.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Животные\Животные_3.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Животные\Животные_4.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Животные\Панда красная.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\загрузка %285%29.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\игра фон.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Легко.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Люди\personage studie.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Люди\Люди_1.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Люди\Люди_2.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Люди\Люди_3.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Люди\Люди_4.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track1.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track10.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track11.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track12.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track13.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track14.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track15.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track16.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track17.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track18.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track2.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track3.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track4.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track5.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track6.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track7.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track8.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Музыка\track9.mp3" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Мультики\Каникулы в Простоквашино_ 1980.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Мультики\Мультики_1.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Мультики\Мультики_2.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Мультики\Мультики_3.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Мультики\Мультики_4.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Мультики\чебурашка.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Надпись изображения.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Надпись изображения1.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Нормально.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Пейзажи\Пейзаж_5.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Пейзажи\Пейзажи_1.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Пейзажи\Пейзажи_2.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Пейзажи\Пейзажи_3.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Пейзажи\Пейзажи_4.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Сложно.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Сложность.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\фон 2 вариант 2 копия.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\фон 2 вариант 2 копия1.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Фрески\Фрески_1.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Фрески\Фрески_2.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Фрески\Фрески_3.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Фрески\Фрески_4.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Фрески\чёрный лис.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\чебурашка.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\Элементарно.png" />
+    <Content Include="bin\Debug\net8.0-windows\Resources\япония закат.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0-preview3.25342.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
